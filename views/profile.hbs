@@ -8,13 +8,8 @@
     <img src={{image}} height="100" width="100" alt="{{username}}'s Image">
     <br>
     <br>
-    <p><b>Username</b>: {{username}}</p>
-{{#if isAuthenticated}}
-    {{#compare_user current_user username}}
-    <p><b>Email</b>: {{email}}</p>
-    {{/compare_user}}
-{{/if}}
-    <p><b>Description</b>: <i>{{description}}</i></p>
+    <p>{{username}}</p>
+    <p><i>{{description}}</i></p>
 
 <a href="/user/{{username}}/threads">Find all threads by {{username}}</a>
 </div>
